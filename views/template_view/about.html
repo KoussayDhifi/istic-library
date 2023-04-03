@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='../static_view/style.css') }}">
+{% endblock %}
+{% block content %}
+<div class="abt">
+<h1>About Us:</h1>
+<p>
+    Welcome to ISTIC-LIBRARY! Our website is designed to provide a platform for ISTIC University students to upload and access useful resources for studying.
+
+At ISTIC-LIBRARY, we believe that students learn best when they have access to a variety of high-quality resources. That's why we created this site, to make it easy for students to share their own materials and benefit from the knowledge and experience of their peers.
+<br>
+<br>
+<br>
+Here are some of the key features of ISTIC-LIBRARY:
+<br>
+</p>
+<ul>
+<li><p>Upload and download files: Users can easily upload files in a variety of formats, including documents, images, and videos. They can also search for and download files uploaded by other users.</p></li>
+<br>
+<li><p>Search for resources: Our site has a powerful search feature that allows users to find resources quickly and easily. They can search by keyword, file type, or other criteria.</p></li>
+</ul>
+
+</div>
+
+{% endblock %}
