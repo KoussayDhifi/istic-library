@@ -10,17 +10,18 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding:15px;
+    position: sticky;
+    top:0px;
     
 }
 
-ul {
+.ul {
     list-style: none;
     display: flex;
     gap:2rem;
     /*border:1px solid black;*/
     height: 100%;
     align-items: center;
-    color:white;
 }
 li a {
     text-decoration: none;
@@ -47,9 +48,17 @@ li a:hover {
 
 
 
-h1 {
+nav h1 {
     font-family: 'Kumbh Sans', sans-serif;
     color:white;
     font-size: 50px;
     line-height: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
 }

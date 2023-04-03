@@ -1,0 +1,34 @@
+.abt {
+    height: 80vh;
+    width: 100vh;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    animation:about;
+    animation-duration: 2s;
+    overflow: hidden;
+
+}
+.abt h1 {
+   font-family: 'Rubik', sans-serif;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+}
+ul {
+    list-style:circle;
+    display: block;
+}
+
+@keyframes about {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 5;
+    }
+}

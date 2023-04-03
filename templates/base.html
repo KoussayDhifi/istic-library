@@ -11,17 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <title>{% block title %}ISTIC-LIBRARY{% endblock %}</title>
     {% block head %}{% endblock %}
 </head>
 <body>
     <nav>
         <div class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="ISTIC-LOGO"><h1>ISTIC-LIBRARY</h1></div>
-        <ul>
-            <li><a href="#">About</a></li>
+        <ul class="ul">
+            <li><a href="{{ url_for('view.about') }}">About</a></li>
             <li><a href="#">Subjects</a></li>
         </ul>
     </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
     
 </body>
 </html>
