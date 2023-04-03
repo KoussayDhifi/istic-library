@@ -30,7 +30,7 @@ li a {
     font-size: 25px;
 }
 
-li {
+.ul li {
     height: 100%;
     padding:13px;
 }
